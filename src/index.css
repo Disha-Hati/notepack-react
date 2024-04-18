@@ -1,13 +1,138 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap");
+
+.app {
+  font-family: "Fira Sans", sans-serif;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  min-height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.note.new {
+  background-color: #fde68a;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: #fde68a;
+  font-size: 18px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.title-textArea {
+  font-size: 25px;
+}
+
+.btn-save {
+  border-radius: 1rem;
+  padding: 8px 13px 8px 13px;
+  background-color: #34d399;
+  color: white;
+  border: none;
+}
+
+.btn-fav {
+  border-radius: 1rem;
+  padding: 5px 10px 5px 10px;
+  background-color: #60a5fa;
+  color: white;
+  border: none;
+}
+
+.btn-save:hover {
+  cursor: pointer;
+  background-color: #059669;
+}
+
+.btn-fav:hover {
+  cursor: pointer;
+  background-color: #2563eb;
+}
+
+.toggle {
+  cursor: pointer;
+  background-color: #312e81;
+  border-radius: 1rem;
+  padding: 8px 12px 8px 10px;
+  color: white;
+  border: none;
+}
+
+.note-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.note {
+  background-color: #ddd6fe;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  text-align: center;
+  background-color: #ede9fe;
+  border-radius: 10px;
+  padding: 13px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  background-color: #ede9fe;
+  border: none;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 3px #f5f3ff;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.dark-mode .toggle {
+  color: black;
+  background-color: white;
 }
