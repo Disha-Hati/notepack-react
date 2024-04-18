@@ -1,4 +1,4 @@
-## GoogleKeep-Clone Project
+## NotePack ✏️
 This project is a simple note-taking web application built to mimic the functionality of Google Keep. It allows users to create, save, like, and delete notes. The application is developed using React.js with the create-react-app tool, styled using CSS, and utilizes local storage for data persistence.
 
 ### Tech Stack
